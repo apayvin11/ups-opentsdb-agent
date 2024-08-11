@@ -1,0 +1,4 @@
+opentsdb_addr = "127.0.0.1:4242"
+ups_addr = "127.0.0.1:1502"
+ups_tag_name = "ups_1" 
+polling_interval = 5 # ups polling interval (sec)
