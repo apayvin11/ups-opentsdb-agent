@@ -150,19 +150,19 @@ func (a *Agent) sendAlarms(al model.Alarms) error {
 
 	metrics := []client.DataPoint{
 		{
-			Metric:    "Alarm_UpcInBatteryMode",
+			Metric:    metricAlarmUpcInBatteryMode,
 			Timestamp: timestamp,
 			Value:     bool2float64(al.UpcInBatteryMode),
 			Tags:      a.getDefaultTags(),
 		},
 		{
-			Metric:    "Alarm_LowBattery",
+			Metric:    metricAlarmLowBattery,
 			Timestamp: timestamp,
 			Value:     bool2float64(al.LowBattery),
 			Tags:      a.getDefaultTags(),
 		},
 		{
-			Metric:    "Alarm_Overload",
+			Metric:    metricAlarmOverload,
 			Timestamp: timestamp,
 			Value:     bool2float64(al.Overload),
 			Tags:      a.getDefaultTags(),
